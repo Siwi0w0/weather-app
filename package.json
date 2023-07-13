@@ -1,7 +1,7 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Siwi0w0/weather-app",
+  "homepage": "https://Siwi0w0.github.io/weather-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
