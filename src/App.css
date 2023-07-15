@@ -2,3 +2,21 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+
+.footer-info {
+  position: fixed;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+  font-family: "Roboto", Arial !important;
+}
+
+.footer-info a:hover {
+  color: #fff;
+}
+
+.footer-info a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+

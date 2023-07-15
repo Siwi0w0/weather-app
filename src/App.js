@@ -37,11 +37,23 @@ function App() {
   console.log(forecast);
 
   return (
-    <div className="container">
-      <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forecast data = {forecast} />}
-    </div>
+    <>
+      <div className="container">
+        <Search onSearchChange={handleOnSearchChange} />
+        {currentWeather && <CurrentWeather data={currentWeather} />}
+        {forecast && <Forecast data = {forecast} />}
+      </div>
+      <div className = "footer-info">
+        <a href="https://github.com/Siwi0w0/weather-app">
+            Source Code
+        </a>{" "}
+          | Developed by{" "}
+          <a target="_blank" href="https://github.com/Siwi0w0">
+            Yufei S
+          </a>{" "}
+      </div>
+    </>
+    
   );
 }
 
