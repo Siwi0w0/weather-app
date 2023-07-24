@@ -1,6 +1,9 @@
 .container {
-  max-width: 1080px;
-  margin: 20px auto;
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #7f7f7f;
+  border-width: 2px 2px 2px 2px;
+  border-color: black;
 }
 
 .footer-info {
