@@ -7,6 +7,7 @@ import {
 } from "react-accessible-accordion";
 import "./forecast.css";
 
+//create a list of week days
 const WEEK_DAYS = [
   "Monday",
   "Tuesday",
@@ -17,6 +18,7 @@ const WEEK_DAYS = [
   "Sunday",
 ];
 
+//creaye a component that will display the forecast days
 const Forecast = ({ data }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(
@@ -27,7 +29,7 @@ const Forecast = ({ data }) => {
     <>
       <label className="title">Daily</label>
       <Accordion allowZeroExpanded>
-        {data.list.splice(0, 7).map((item, idx) => (
+        {data.list.splice(0, 5).map((item, idx) => (
           <AccordionItem key={idx}>
             <AccordionItemHeading>
               <AccordionItemButton>
@@ -35,7 +37,7 @@ const Forecast = ({ data }) => {
                   <img
                     alt="weather"
                     className="icon-small"
-                    src={`public/icons/${item.weather[0].icon}.png`}
+                    src={`icons/${item.weather[0].icon}.png`}
                   />
                   <label className="day">{forecastDays[idx]}</label>
                   <label className="description">

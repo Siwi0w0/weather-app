@@ -1,15 +1,16 @@
 .container {
-  max-width: 600px;
-  margin: 100px auto;
-  background-color: #7f7f7f;
+  max-width: 414px;
+  margin: 40px auto;
+  background: rgba(217, 217, 217, 0.30);
   border-width: 2px 2px 2px 2px;
   border-color: black;
+  max-height: 700px;
 }
 
 .footer-info {
   position: fixed;
   width: 100%;
-  bottom: 50px;
+  bottom: 20px;
   text-align: center;
   font-family: "Roboto", Arial !important;
 }
@@ -19,7 +20,7 @@
 }
 
 .footer-info a {
-  color: #7f7f7f;
+  color: #58CEA4;
   text-decoration: none;
 }
 
