@@ -1,4 +1,26 @@
 .container {
-  max-width: 1080px;
-  margin: 20px auto;
+  max-width: 414px;
+  margin: 40px auto;
+  background: rgba(217, 217, 217, 0.30);
+  border-width: 2px 2px 2px 2px;
+  border-color: black;
+  max-height: 700px;
 }
+
+.footer-info {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  font-family: "Roboto", Arial !important;
+}
+
+.footer-info a:hover {
+  color: #fff;
+}
+
+.footer-info a {
+  color: #58CEA4;
+  text-decoration: none;
+}
+
