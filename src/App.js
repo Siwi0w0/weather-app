@@ -6,6 +6,7 @@ import CurrentWeather from "./components/current-weather/current-weather";
 import Forecast from "./components/forecast/forecast";
 import AirPollution from "./components/airpollution/airpollution";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
+
 import { useState } from "react";
 
 function App() {

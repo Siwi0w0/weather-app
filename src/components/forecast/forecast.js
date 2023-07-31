@@ -5,6 +5,7 @@ import {
   AccordionItemPanel,
   AccordionItemButton,
 } from "react-accessible-accordion";
+
 import "./forecast.css";
 
 //create a list of week days
