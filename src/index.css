@@ -8,6 +8,10 @@ html {
   background-repeat:no-repeat;
 }
 
+body {
+  min-width: 320px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
