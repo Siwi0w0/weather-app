@@ -29,17 +29,18 @@ function App() {
       `${WEATHER_API_URL}/air_pollution?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
     )
 
-    Promise.all([currentWeatherFetch, forecastFetch, airPollutionFetch])
+    Promise.all([currentWeatherFetch, airPollutionFetch, forecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
-        const forecastResponse = await response[1].json();
-        const airPollutionResponse = await response[2].json();
+        const airPollutionResponse = await response[1].json();
+        const forecastResponse = await response[2].json();
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
+        setAirPollution({city: searchData.label, ...airPollutionResponse});
         setForecast({ city: searchData.label, ...forecastResponse });
         // setDefaultWeather({ city: searchData.label, ...defaultWeather });
     
-        setAirPollution({city: searchData.label, ...airPollutionResponse});
+        
       })
       .catch((err) => {
         console.error(err);
@@ -47,16 +48,16 @@ function App() {
   };
 
   console.log(currentWeather);
-  console.log(forecast);
   console.log(airPollution);
+  console.log(forecast);
 
   return (
     <>
       <div className="container">
         <Search onSearchChange={handleOnSearchChange} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
-        {forecast && <Forecast data = {forecast} />}
         {airPollution && <AirPollution data = {airPollution} />}
+        {forecast && <Forecast data = {forecast} />}
         {/* {searchData && <WeatherIcon iconID={weatherData.weather[0].icon} />} */}
         {/* {defaultWeather && <DefaultWeather data = {defaultWeather} />} */}
         <div className = "footer-info">

@@ -2,15 +2,16 @@
     font-size: 23px;
     font-weight: 600;
     color: #ffffff;
-    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .daily-item {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.35);
-    color:#dbdbdb;
+    color:#ececec;
     height: 40px;
-    margin: 5px;
+    margin: 10px;
     align-items: center;
     display: flex;
     cursor: pointer;
