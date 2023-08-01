@@ -24,19 +24,19 @@ const AirPollution = ({data}) => {
                     </div>
                     <div className="parameter-row">
                         <span className="parameter-label">SO<sub>2</sub></span>
-                        <span className="parameter-value">{data.list[0].components.co}</span>
+                        <span className="parameter-value">{data.list[0].components.co} μg/m&#179;</span>
                     </div>
                     <div className="parameter-row">
                         <span className="parameter-label">NO<sub>2</sub></span>
-                        <span className="parameter-value">{data.list[0].components.no2}</span>
+                        <span className="parameter-value">{data.list[0].components.no2} μg/m&#179;</span>
                     </div>
                     <div className="parameter-row">
                         <span className="parameter-label">PM<sub>2.5</sub></span>
-                        <span className="parameter-value">{data.list[0].components.pm2_5}</span>
+                        <span className="parameter-value">{data.list[0].components.pm2_5} μg/m&#179;</span>
                     </div>
                     <div className="parameter-row">
                         <span className="parameter-label">O<sub>3</sub></span>
-                        <span className="parameter-value">{data.list[0].components.o3}</span>
+                        <span className="parameter-value">{data.list[0].components.o3} μg/m&#179;</span>
                     </div>
                 </div>
             </div>
