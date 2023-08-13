@@ -1,7 +1,7 @@
 # Live Weather App
 ![screenshot img](./public/Screenshot.png)
 
-## A side project I did for learning React
+## A side project for learning React
 
 - It is a single-page web application that allows users easily search for current weather, air quality and forecast in their cities.
 
